@@ -1,0 +1,48 @@
+/* culoare echipa #fe2323 */
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+body {
+    background-color: #222;
+    color: black;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    margin: 0;
+    padding: 0;
+}
+
+.button {
+    background-color: #fe2323;
+    border: none;
+    color: white;
+    /* padding: 25vh 25vw; */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    /* padding: 0 4px; */
+}
+
+.col {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.p-10 {
+    padding: 10px;
+}
+
+.container {
+    margin: 10px;
+}
