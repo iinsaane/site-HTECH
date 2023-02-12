@@ -3,8 +3,10 @@ console.log(document.body);
 
 const loader = new THREE.GLTFLoader();
 
-loader.load( '/models/Duck.glb', function ( gltf ) {
-
+loader.load( '/models/jimmy.glb', function ( gltf ) {
+  //scale the model to 10x its original size
+  const multiplier = 30;
+  gltf.scene.scale.set(multiplier, multiplier, multiplier);
 	scene.add( gltf.scene );
 
 }, undefined, function ( error ) {
@@ -25,7 +27,9 @@ document.body.appendChild(renderer.domElement);
 var scene = new THREE.Scene();
 // Create a camera
 var camera = new THREE.PerspectiveCamera(45, width / height, 0.1, 10000);
-camera.position.z = 50;
+camera.position.z = -30;
+camera.position.y = 30;
+camera.position.x = 30;
 
 scene.add(camera);
 
@@ -38,6 +42,11 @@ scene.add(light);
 var light = new THREE.PointLight(0xffffff);
 light.position.set(100,-200,100);
 scene.add(light);
+
+//world light
+var light = new THREE.AmbientLight( 0x404040 ); // soft white light
+scene.add( light );
+
 
 // Add OrbitControls so that we can pan around with the mouse.
 var controls = new THREE.OrbitControls(camera, renderer.domElement);
