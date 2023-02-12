@@ -1,0 +1,31 @@
+body {
+  background-color: #222;
+  color: #ffffff;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav {
+  top: 0;
+  position: sticky;
+  z-index: 2;
+  width: 100%;
+  float: center;
+}
+
+.navbar {
+  width: 100%;
+  float: center;
+}
+
+.nav-item img {
+  height: 30px;
+  float: left;
+}
+.container-fluid {
+  width: 100%;
+  align-items: flex-end;
+}

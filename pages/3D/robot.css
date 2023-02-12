@@ -1,0 +1,24 @@
+
+
+.nav {
+  top: 0;
+  position: sticky;
+  z-index: 2;
+  width: 100%;
+  float: center;
+}
+
+.navbar {
+background-color: black;
+  width: 100%;
+  float: center;
+}
+
+.nav-item img {
+  height: 30px;
+  float: left;
+}
+.container-fluid {
+  width: 100%;
+  align-items: flex-end;
+}
