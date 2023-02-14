@@ -22,3 +22,17 @@ background-color: black;
   width: 100%;
   align-items: flex-end;
 }
+
+.status {
+  display: flex;
+  position: absolute;
+  color: white;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+}

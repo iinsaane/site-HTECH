@@ -9,10 +9,13 @@ loader.load(
     const multiplier = 30;
     gltf.scene.scale.set(multiplier, multiplier, multiplier);
     scene.add(gltf.scene);
+    //delete the loading element and set z index to 0
+    document.getElementById("status").style.display = "none";
+    document.body.style.zIndex = 0;
   },
 
   function (xhr) {
-    document.innerHTML += (xhr.loaded / xhr.total) * 100 + "% loaded";
+    document.getElementById('status').innerHTML  = Math.round( (xhr.loaded / xhr.total) * 1000)/10 + "% loaded" 
   },
   function (error) {
     console.error(error);
@@ -52,7 +55,8 @@ var light = new THREE.AmbientLight(0x404040); // soft white light
 scene.add(light);
 
 // Add OrbitControls so that we can pan around with the mouse.
-var controls = new THREE.OrbitControls(camera, renderer.domElement);
+var controls = new THREE.OrbitControls(camera, renderer.domElement, {
+  enableDamping: true});
 
 // // Add axes
 // var axes = new THREE.AxisHelper(50);
