@@ -178,12 +178,13 @@ body
     
     border-radius: 6px;
     height: 100%;
-    width: 200px;
+    width: calc(100% / 5 - 10px);
     background-color: #bc002f;
     /* center text */
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 
     /* reset link style */
     text-decoration: none;
@@ -197,4 +198,9 @@ body
 .document-button:hover {
     background-color: #cc0234;
     transform: scale(1.1);
+}
+
+.about-us {
+    font-size: 2rem;
+    margin: 5px;
 }

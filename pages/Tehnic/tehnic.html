@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./tehnic.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <title>Tehnic</title>
+</head>
+
+<body>
+    <div class="nav">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="/">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/pages/aboutus.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">FTC Seasons</a>
+                        </li>
+                        <li class="nav-item">
+                            <img src="/logo-htech.png">
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/pages/departments.html">Departments</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <title> Partea tehnica </title>
+
+
+    <ul>
+        <li>Mecanisme achiziționate:
+            <ol>
+                <br /><br />
+                <li> <strong> Șasiu </strong> <br />
+                    Am optat pentru folosirea unor roți mecanum în loc de omni pentru o tracțiune mai bună, ușurință în
+                    construcție și manevrabilitate pe teren, iar aceasta se datorează faptului că roțile omni se uzează
+                    mai
+                    repede și sunt mai greu de controlat, necesitând componente adiționale și calcule pentru a le
+                    asigura
+                    funcționarea, însă eficiența rămâne scăzută. De asemenea, utilizarea acestor roți necesită motoare
+                    cu
+                    torsiune mai mare pentru a se deplasa în linie dreaptă.
+
+                    Piesele folosite sunt:
+                    <ul>
+                        <li>4 motoare goBILDA, serie 5202 cu 312RPM;</li>
+                        <li>4 roți mecanum goBILDA de 96mm;</li>
+                        <li>3 U-channels de 240mm și 168mm în loc de 4 pentru extinderea glisierelor REV și utilizarea
+                            mai eficientă a spațiului din interiorul bazei.</li>
+                    </ul>
+
+
+                    <br /><br />
+                    <strong> Prototip 1 </strong> <br />
+
+                    Baza de la care am pornit inițial în construcția robotului a fost șasiul Strafer de la goBILDA. Am
+                    început să ne formăm o idee despre cum trebuie să arate robotul și cum să fie poziționate sistemele.
+
+                    <br />Am intenționat să folosim Pan kitul creat de goBILDA, care ar fi rotit un braț cu una sau două
+                    îmbinări și
+                    un clește la vârful lui. Pentru ideea noastră, departamentul 3D a proiectat 2 bumpere, astfel încât
+                    conurile să fie conduse către poziția optimă de ridicare.
+
+                    <br />Au apărut câteva complicații la planul nostru inițial. Pan kitul nu era disponibil în stocul
+                    goBILDA în
+                    momentul în care am plasat comanda de piese, astfel că a trebuit să cumpărăm fiecare element în mod
+                    individual. Din acest motiv, au fost omise câteva piese, ceea ce a încetinit procesul de testare. Am
+                    găsit în România niște componente care să înlocuiască ceea ce ne lipsea, dar după montare ne-am dat
+                    seama că nu se încadrau în dimensiunile pentru înălțime. În plus, din cauza Pan kitului și a
+                    glisierelor, masa robotului a crescut semnificativ și a devenit extrem de greu de manevrat.
+
+                    <br />Înălțimea la
+                    care se afla ridică centrul de greutate de la sol și robotul devenea astfel instabil. Pentru a
+                    rezolva această problemă, am hotărât că singura soluție este să instalăm glisierele cât mai aproape
+                    de sol,
+                    dar acest lucru ar fi limitat unghiul de rotație al Pan kitului. De asemenea, doream o bază mai mică
+                    pentru a obține o mobilitate cât mai bună pe teren.
+
+                    Dezavantaje:
+                    - Masa foarte mare care putea strica terenul de joc;
+                    - Creșterea instabilității din cauza centrului de greutate;
+                    - Manevrare foarte dificilă.
+
+                    <br /><br />
+                    <strong>
+                        Prototip 2 </strong> <br />
+
+                    Baza a fost redusă semnificativ în dimensiuni, însă singurul loc în care exista spațiu pentru
+                    amplasarea
+                    glisierei era una dintre lateralele robotului. Astfel, o pereche de roți a fost mutată spre
+                    interior,
+                    dar problema unghiului de mișcare liberă a Pan kitului încă persista. În plus, a apărut o problemă
+                    mult
+                    mai mare. Centrul de greutate a fost mutat în afara limitelor stabile ale amprentei la sol, existând
+                    riscul ca robotul să se răstoarne în urma unor mișcări cu glisiera extinsă.
+
+                    Dezavantaje:
+                    - Punctul de greutate era foarte aproape de marginea robotului;
+                    - Unghiul de rotire al glisierei era foarte mic, foarte limitat;
+                    - Nu își păstra echilibrul, decât dacă ar fi avut o contragreutate foarte mare, de peste 3
+                    kilograme,
+                    ceea ce ar fi făcut robotul foarte încet.
+
+
+                    <br /><br />
+                    <strong> Prototip 3 </strong> <br />
+
+                    Am ajuns la concluzia că amplasarea unei glisiere în mijlocul bazei ne oferă multe avantaje, cum ar
+                    fi
+                    un centru de greutate mai apropiat de sol. De asemenea, am decis să eliminăm complet sistemul Pan
+                    Kit,
+                    deoarece nu am putut să ne încadrăm în dimensiuni fără a limita unghiul de rotație la mai puțin de
+                    180°,
+                    astfel încât folosirea acestuia ne-ar fi creat mai multe dezavantaje decât avantaje.
+                    Drept urmare, am mărit puțin dimensiunile bazei, am adăugat două glisiere REV din sezoanele trecute
+                    și
+                    am conectat șasiul robotului la o bază secundară, pe care a fost instalată glisiera goBILDA.
+                    Glisiera a fost montată pe un canal U de 9,6 cm cu două axe, pe care au fost montate câte 4 roți de
+                    tip
+                    omni, astfel încât să nu afecteze mișcarea robotului. În total, robotul avea 8 roți pe glisieră și 4
+                    pe
+                    bază.
+
+                    <br />-
+                    <strong>
+                        Prototip 3.1 </strong> <br />
+                    , cu glisiera pusă pe 4 roti omni pentru a avea stabilitate atunci cand cele 2 glisiere
+                    orizontale se vor extinde.
+
+                    Dezavantaje:
+                    - Deși baza secundară avea o oarecare stabilitate, cele 2 seturi de roti omni nu erau suficiente;
+                    - Glisiera era foarte instabilă;
+                    - Deși glisiera era separată de bază, depindea foarte mult de aceasta, iar centrul de greutate era
+                    poziționat foarte aproape de margine.
+
+                    <br />- <strong> prorotip 3.2</strong>, <br />
+
+
+                    pentru care am adăugat încă 4 roți omni pe baza secundară unde se afla glisiera,
+                    pentru
+                    a îmbunătăți stabilitatea la extindere, dar tot nu am eliminat complet balansul care apare la
+                    accelerarea sau decelerarea robotului cu glisiera extinsă.
+
+                    Dezavantaje:
+                    - Robotul nu putea să stea cu roțile omni pe pământ din cauza glisierei montată în lateral;
+                    - Avea centrul de greutate deplasat mult în față, astfel existând riscul să se răstoarne dacă este
+                    lovit
+                    accidental în timpul meciului;
+                    - Glisiera se putea doar extinde, fără să se poată roti, iar conurile trebuiau să fie luate doar
+                    prin
+                    rotirea robotului, ceea ce era ineficient.
+
+
+
+
+                    Variantă finală: După ce am observat toate dezavantajele din prototipurile trecute, am luat decizia
+                    de a
+                    monta glisiera goBILDA pe baza principală iar baza secundară ce a fost atașată la glisierele REV să
+                    fie
+                    eliminată complet. Astfel îi oferim robotului o stabilitate mult mai bună alături de sisteme și
+                    automatizări rapide.
+
+
+
+                </li>
+                <br /><br />
+                <li> <strong> Glisiera verticală </strong> <br />
+
+                    Sistemul de ațe de pe glisiera goBilda utilizează cabluri și pârghii pentru extinderea și coborârea
+                    glisierei. Un fir este atașat la capătul superior al glisierei, iar celălalt la capătul inferior.
+                    Când
+                    glisiera este întinsă, firul inferior se strânge și firul superior se relaxează, extinzând glisiera.
+                    În
+                    cazul coborârii glisierei, sistemul funcționează invers, când firul superior se strânge, iar cel
+                    inferior se relaxează. Această mișcare este posibilă datorită principiului pârghiilor, care
+                    amplifică
+                    forța aplicată la capătul firelor pentru a trage sau ridica obiecte grele.<br />
+                    - motor goBILDA de 223 RPM<br />
+
+                    <br />- <strong>
+                        Prototip 1 </strong> <br />
+
+                    Ne doream să putem lua conuri de pe teren atât din fața, cât și din spatele robotului, cu ajutorul
+                    glisierei goBILDA situată pe Pan kit. Totuși, pentru că glisiera a fost asamblată pe baza redusă ca
+                    dimensiuni, dispozitivul de rotire nu încăpea între motoare. Am încercat să o montăm cat mai aproape
+                    de
+                    sol, pentru a se încadra în dimensiunile pentru înălțime, dar am ajuns la concluzia că baza nu era
+                    cu
+                    mult mai mică în lungime fata de dimensiunile bazei initiale (prototip 1).
+                    <br />
+                    Dezavantaje:
+                    <ul>
+                        <li>Folosirea pan kit-ului pentru o rotatie completa ne obliga sa depasim limitele admise.</li>
+                        <li>Pozitionarea glisierei cu pan kit fara ca aceasta sa iasa din dimensiuni limiteaza unghiul
+                            de
+                            rotatie</li>
+                    </ul>
+                    <br /><br />
+
+
+                    <br /> <strong>
+                        Prototip 2 </strong> <br />
+
+                    Glisiera montata fara Pan kit direct pe baza mica
+                    Datorită faptului că ideea inițială de a folosi o glisiera care să se rotească 360° depășea
+                    înălțimea de
+                    18 inch, am fost nevoiți să renunțăm la Pan Kit, ceea ce a făcut ca opțiunea de a roti glisiera
+                    pentru a
+                    ridica mai ușor conurile să nu mai fie disponibilă. Deși glisiera avea mai multe probleme, am decis
+                    să o
+                    păstrăm ca o variantă de rezervă, având în vedere posibilitatea de a o îmbunătăți.<br />
+                    Dezavantaje:<br />
+                    <ul>
+                        <li> extrem de complicat;</li>
+                        <li>O înălțime mare, pentru care am fi fost nevoiți să depunem eforturi considerabile pentru a
+                            reduce
+                            dimensiunile.</li>
+                    </ul> <br />
+
+
+                    <br /> <strong>
+                        Prototip 3 </strong> <br />
+
+
+                    Glisiera montata pe alte 2 glisiere, ca un sistem de sertare
+                    Pentru a remedia problema centrului de greutate, am instalat 4 roti pe glisierele robotului. Acest
+                    lucru
+                    a permis robotului să-și păstreze echilibrul, iar noi am continuat să dezvoltăm acest prototip. Am
+                    optat
+                    pentru două glisiere REV pentru a extinde și retrage baza robotului, minimizând astfel mișcările și
+                    rotațiile necesare pentru a obține conurile. În ciuda eforturilor noastre de îmbunătățire, ancorarea
+                    roților pe glisiere perpendicular pe axa acestora a provocat o concentrare a greutății pe o singură
+                    linie, ceea ce a dus la dezechilibrarea robotului în timpul virajelor și la scăderea vitezei în
+                    timpul
+                    meciurilor.<br />
+
+                    Cu 8 roti omni existente pe glisieră, s-a eliminat complet problema centrului de greutate deplasat
+                    în
+                    față și am putut să continuăm dezvoltarea acestui sistem. Principiul după care ar fi făcut strategia
+                    de
+                    joc ar fi fost ca robotul să facă cât mai puține mutări din bază pentru a permite glisierelor REV să
+                    completeze sarcinile din timpul meciului.<br />
+                    Dezavantaje:
+                    <ul>
+                        <li> baza mică are prea multă încărcare pe rotile omni, iar diferența de înălțime dintre șasiu
+                            și
+                            acesta
+                            duce la apariția unei tensiuni în punctele de conectare la extinderea bazei, în special în
+                            momentele
+                            în
+                            care cleștele urcă pentru a poziționa conul pe cel mai înalt junction. </li>
+                    </ul>
+
+                    <br /> <strong>
+                        Prototip 4 </strong> <br />
+
+                    Glisiera montata pe roti cu bile, extinsa de glisiera REV
+                    O îmbunătățire importantă adusă variantei anterioare constă în înlocuirea roților glisierei cu o
+                    placă
+                    rotundă pe care sunt atașate patru bile. Aceste bile sunt fixe într-un suport printat 3D, care le
+                    permite să se rotească în toate direcțiile, astfel încât robotul să rămână echilibrat la toate
+                    virajele.
+                    Modelul actual a dus la o îmbunătățire semnificativă a performanțelor robotului. <br />
+                    Dezavantaje:
+                    <ul>
+                        <li> există riscul ca bilele de sticlă să cadă din suportul lor pe teren în urma unei coliziuni
+                            accidentale
+                            cu alt robot, junction (in special la ground junction) sau cu pereții, ceea ce ar genera o
+                            penalizare și
+                            imposibilitatea continuării meciului, fără toate acele sfere neputând sta drept. </li>
+                    </ul>
+
+                    <br /> <strong>
+                        Prototip 5 </strong> <br />
+
+                    Glisiera montata pe 8 roti omni, extinsa de glisiere REV
+                    Placa rotundă nu constituia un avantaj prea mare, deoarece frecarea mică dintre sticlă și EVA
+                    anti-statică poate produce deraparea bilelor și oprirea lor din învârtire pentru perioade scurte de
+                    timp. Așa că am renunțat la ea și am revenit la varianta anterioară cu roți, doar că am pus patru
+                    roți
+                    omni pe un ax paralel cu cel al roților de pe bază, montate pe cea mai din față bară de pe glisiere,
+                    în
+                    interiorul robotului. Apoi, pe glisierea verticală am instalat perechi de roți omni, formându-se
+                    astfel
+                    unghiuri de 90° între fiecare set de roți. Și fiindcă acestea au fost reglate să fie la aceeași
+                    înălțime, s-a rezolvat complet problema dezechilibrului.<br />
+
+                    Dezavantaje:
+                    <ul>
+                        <li>
+                            utilizarea de roți omni necesita mai multă acuratețe în poziționare, încetinește robotul la
+                            partea
+                            de
+                            autonomie și crește consumul de energie. În plus, ar fi necesar sa verificăm constant toate
+                            cele 8
+                            roți
+                            omni deoarece sistemul lor de alunecare și rotire se uzează destul de repede.</li>
+                    </ul>
+
+                    <br /> <strong>
+                        2.1. Braț </strong> <br />
+
+                    Observând că avem probleme cu glisiera verticală și sistemul de intake, ne-am gandit ca o soluție
+                    buna
+                    ar fi un brat. Acesta a fost realizat in timp ce se rezolvau problemele aparute la sistemele
+                    initiale de
+                    pe robot, pentru a avea un plan de rezerva in cazul aparitiei unei situatii nefavorabile.// Am decis
+                    totusi sa rezolvam toate problemele aparute la glisiera pentru ca aceasta a fost ideea initiala, cu
+                    toate ca s-au scos multe mecanisme decise in sedintele de brainstorming (cum ar fi pan kitul),
+                    glisiera
+                    a fost principala idee de la care am pornit.
+                    Bratul a fost facut din U-Channels de la goBILDA, servouri si s-a realizat pentru el si un Pan kit
+                    din
+                    piesele comandate, deoarece acestea erau exact cele folosite de producator pentru modelul lor . De
+                    asemenea, la sfarsit, acesta mergea pe baza de lant pentru a nu mai fi nevoie de atatea servouri.
+                    <br />
+                    Dezavantaje:
+                    <ul>
+                        <li> cu o imbinare pe brat, robotul nu ajungea la junctionul cel mare, iar pentru a face si o a
+                            doua
+                            imbinare, ar fi folosit din nou foarte multe resurse care ar fi ajuns grele.</li>
+                        <li>Ca sa se fixeze centrul de greutate cat mai in mijloc cat sa nu se dezechilibreze robotul,
+                            sistemul ar
+                            trebui sa fie cat mai în mijlocul robotului, ceea ce ar fi forțat brațul sa fie și mai lung
+                            și greu.</li>
+                    </ul>
+                </li>
+            </ol>
+        </li>
+        <br /><br />
+
+        <li> <strong> Autentice </strong> <br />
+
+            <ol>
+                <strong>
+                    <li> Sistem intake
+                </strong> <br />
+
+                <strong>
+                    a) Intake singular: un singur mecanism necesar </strong> <br /> <br />
+
+                <strong>
+                    Prototip 1 intake: Apertura </strong> <br />
+
+                Primul prototip a fost inspirat din modul de funcționare al unei aperturi foto, alcătuită din 7 lamele
+                de
+                plastic care se deplasează simultan pentru a forma o deschidere si închidere poligonală in jurul
+                conului.
+                Din cauza mărimii voluminoase, am preferat sa realizam primul prototip folosind bucăți de plastic si
+                carton
+                pentru suprafetele intinse ce ar fi trebuit printate. Acesta a rămas doar ca o idee ingenioasa, deoarece
+                dimensiunea aperturii a depășit limitările implementării pe robot, în timp ce performanțele de aderență
+                au
+                rămas sub așteptări. Acesta a fost inspirat din modul de functionare al unei aperturi foto cu 7 lamele,
+                astfel realizandu-se inchidere poligonala in jurul conului. Prototipul a fost realizat din materiale
+                reciclabile din cauza dezavantajelor. <br />
+                Dezavantaje:
+                <ul>
+                    <li> dimensiuni mult prea mari; </li>
+                    <li> posibilitatea alunecarii conului din apertura, iar dacă modificăm lamelele s-ar fi mărit
+                        dimensiunile mai
+                        mult </li>
+                </ul>
+
+                <br /> <strong>
+                    Prototip 2 intake: Cleste cu elastice care are U-Channeluri doar pe o parte </strong> <br />
+
+                Prima varianta am construit-o din doua placute Tetrix pe care am montat cate doua profile in L
+                distanțate,
+                urmand ca elasticele sa vina de pe unul pe celalalt. Prin apropierea celor doua brate, elasticele se
+                tensioneaza si prind conul. <br />
+                Dezavantaje:
+                <ul>
+                    <li>instabilitatea prinderii;</li>
+                    <li>posibilitate mare să cedeze elasticele de la tensiune.</li>
+                </ul>
+
+                <br /> <strong>
+                    Prototip 3 intake: Cleste cu elastice 3D </strong> <br />
+
+                Versiunea anterioara cauza înclinarea conului din cauza ca prototipul avea punct prindere asupra
+                elementului
+                de joc doar in doua puncte, așa ca am adaugat inca o serie de elastice, care s-a dovedit să-i confere
+                destula stabilitate.
+                Dezavantaje:
+                <ul>
+                    <li> aceleasi ca la prototip 2. </li>
+                </ul>
+
+                <div class="centered">
+                    <strong>
+                        Încercări 3D de tipuri diferite de clești, dupa prototipul din piese Tetrix
+                    </strong>
+                </div>
+
+                <br /> <strong>
+                    Primul prototip de cleste cu elastice: </strong> <br />
+                <ul>
+                    <li> suportii pentru elastice nu sunt facuti;</li>
+                    <li> nu era eficienta forma de patrat, pe rotund este mai avantajos prin faptul ca nu ar fi fost
+                        spatiu
+                        mort si</li>
+                    forma de semicerc nu avea riscul sa se deformeze la fel de mare.
+                </ul>
+
+                <br /> <strong>
+                    Al doilea prototip de cleste cu elastice </strong> <br />
+                <ul>
+                    <li> puncte de sprijin pentru elastice; </li>
+                    <li> este făcut după marimile conului; </li>
+                    <li> au existat niste probleme la exportarea fisierului, eveniment din care am invatat cum sa o
+                        facem
+                        corect. </li>
+                </ul>
+
+                <br /> <strong>
+                    Al treilea prototip de cleste cu elastice </strong> <br />
+                <ul>
+                    <li> avea valori exacte; </li>
+                    <li> asemanator cu prototipurile anterioare, realizat dupa cel din piese Tetrix; </li>
+                    <li> fata de variantele anterioare, grosimea s-a marit pentru a fi siguri ca nu va ceda din cauza
+                        tensiunii
+                        elasticelor; </li>
+                    <li> suportii pentru elastice au fost imbunatatiti, fiind mai stabili și cu o piedică pentru a
+                        impiedica
+                        iesirea elasticelor. </li>
+                </ul> <br />
+
+                După ce am realizat un prototip din piese tetrix care a funcționat, am replicat un fișier 3D cu aceleași
+                dimensiuni. Ca îmbunătățire, acest cleste are piedici care sa prevină căderea elasticilor, dar
+                funcționează
+                pe același principiu cu doua servomotoare. <br /><br />
+
+                <strong>
+                    Al patrulea prototip de cleste cu elastice </strong> <br />
+                <ul>
+                    <li> s-a încercat subtierea lui, deoarece prototipul anterior era masiv, dura mult printarea și
+                        consuma o
+                        cantitate semnificativă de filament. </li>
+                </ul> <br />
+
+                <strong>
+                    Al cincelea prototip de cleste cu elastice </strong> <br />
+                <ul>
+                    <li> pentru acesta am decis sa folosim o fixare pe baza de șuruburi a tuturor componentelor; </li>
+                    <li> a fost printat de 2 ori, cu mici diferente, doar ca nu era suficient de stabil, iar rotile
+                        zimtate
+                        aveau o
+                        mare probabilitate sa sara. </li>
+                </ul> <br />
+
+
+
+                <strong>
+                    Prototip 4 intake: dispozitiv care servește la stabilizarea selectivă a gunoaielor prin prinderea
+                    lor </strong> <br />
+
+                Sistemul se insereaza in interiorul conului unde se va extinde pana la blocare. Insa, acesta necesita
+                multa
+                precizie din partea driverilor, acestia fiind nevoiti sa se plaseze exact deasupra orificiului conului,
+                astfel existand o posibilitate mare de pierdere de timp in timpul meciurilor. <br />
+                Dezavantaje:
+                <ul>
+                    <li> Nevoie de mare precizie a driverilor pentru a nimeri orificiul conului, ceea ce duce la
+                        pierdere de
+                        timp
+                        inutila in timpul meciurilor; </li>
+                    <li> Dispozitivul era situat pe o parte a robotului, astfel irosind mult timp pentru rotirea
+                        întregii baze
+                        de
+                        la preluarea conului la junction. </li>
+                </ul>
+
+                <br /> <strong>
+                    Prototip 5 intake: Cleste normal cu doua roti zimtate, pe un singur servo, care sa deschida ambele
+                    parti
+                    de
+                    prindere. </strong> <br />
+                Pentru aderenta se foloseste cheder.
+                Acest cleste se regaseste si in momentul actual pe robot, doar ca intr-un ansamblu care foloseste si un
+                sleeve. <br /><br />
+
+                <strong>
+                    b) Intake dublu; doua mecanisme necesare </strong> <br />
+
+                <br /> <strong>
+                    Prototip 6 intake: </strong> <br />
+                Folosește 2 clesti, primul pe glisiera si al doilea pe partea din spate a clestelui.
+                Pentru a accelera procesul de transport al conurilor ne-am gandit sa adaugam un clește in spate care sa
+                preia conurile fără sa fie necesar să întoarcem baza. Totuși, acest sistem presupune rotirea conului cu
+                baza
+                in sus, iar apoi prinderea de catre al doilea cleste. <br />
+
+                <br /> <strong>
+                    Prototip 7, varianta finală </strong> <br />
+
+                Am decis să folosim un clește normal doar pe spate, fixat pe un Low U Channel între cele 2 glisiere
+                orizontale. Acest sistem ne ajută la o preluare mai rapidă de la depărtare, fără a mișca baza. De
+                asemenea,
+                pentru a fi complet tot sistemul, cleștele de pe spate pasează conul unui sleeve pus pe glisieră prin
+                rotirea lui la 180° și poziționarea deasupra unui junction. Această versiune are ca scop automatizarea
+                așezării de conuri pe același junction pentru a reduce timpul de plasare al unui singur con.
+                <br /><br />
+
+                <strong> Cleste actual de pe robot care a fost folosit la toate demourile, inclusiv regională.
+                    <br /><br /> </strong>
+
+                La al doilea demo, beaconul (doza de Monster) nu intra bine in sleeve, asa ca l-am pus doar pe ground
+                junction. Am discutat sa modificam sleeveul pentru a păstra beaconul cilindric, dar am decis sa ramanem
+                la
+                sleeveul original, conic, pentru a fi siguri ca robotul se descurca bine cu conurile in meciuri si sa
+                facem
+                alt beacon. La primul demo, am vazut ca sistemul nostru de colectare si amplasare pe junctions nu e
+                eficient. Am vazut ca multe echipe folosesc o sistem de intake diferit, asa ca am decis sa folosim
+                glisiere
+                orizontale pentru a apuca conurile la o distanta mare fata de baza si sa le mutam la junctions cu
+                ajutorul
+                unei glisiere verticale si a unei piedici.
+
+                <br /> <strong>
+                    Principiu de funcționare: </strong> <br />
+                Revenind asupra ideei de a folosi doar un clește, am schimbat si orientarea robotului pentru a se adapta
+                planului nostru de intake. Acesta includea drept parte frontala, latura cu cele 2 glisiere orizontale
+                REV,
+                iar acum acestea devin de fapt spatele. Aici am montat un brat care foloseste 3 servouri:
+                <ul>
+                    <li> unul pentru a inchide si a deschide clestele de la capatul bratului; </li>
+                    <li> unul pentru a roti in sus sau in jos clestele, ceea ce ne va ajuta la apucarea din stack a
+                        conurilor; </li>
+                    <li> unul pentru a roti tot bratul cu clestele la 180°. </li>
+                </ul>
+                Atunci cand clestele de pe spate va prinde un con, acesta se va roti la 180°, spre sleeve și va intoarce
+                conul cu baza in sus. De acolo, acesta va fi preluat in sleeve-ul de pe glisiera principala si blocat cu
+                o
+                piedica. Totul se roteste spre junction, fata opusa de unde a fost luat, la alte 180° și ajunge deasupra
+                junctionului (ridicat de glisiera, fara a misca sasiul in intregul proces), piedica se va muta, iar
+                conul va
+                cadea pe junction in siguranta. <br /><br />
+
+                <strong>
+                    2. Suporti + printuri adiționale </strong> <br />
+                <ol type="a">
+                    <li> Suport de baterie Matrix 12V 3000mAh NiMH </li> <br />
+
+                    <li> Suport mufa baterie pentru control hub </li> <br />
+
+
+
+                    <li> Bumper (din motive ce aveau legatura cu practicabilitatea si eficienta robotului in teren, am
+                        ales sa
+                        nu
+                        il utilizam) </li><br />
+
+                    <li> Suporti pentru rulmentii glisierelor orizontale </li><br />
+                </ol>
+
+
+                <br /> <strong> Designul robotului si organizarea cablurilor </strong> <br />
+                <ul>
+                    <li> Pentru a crea un aspect industrial, curat si pentru evitarea culorilor inestetice, am invelit
+                        multe
+                        componente cu banda izoliera neagra (motoare, servouri, U Channels, extruzii REV) si am vopsit
+                        cu spray
+                        negru părțile printate 3D (tot sistemul de intake, suportul de baterie etc.); </li>
+                    <li> Dorind sa includem elemente creative pe partea estetică, am construit peretii laterali cu un
+                        model
+                        asemanator celui prezent in caietul tehnic. Pe acesta se vor plasa alliance markers, numarul
+                        international
+                        si logourile sponsorilor. </li>
+
+
+
+                    <li> Initial, aveam in plan realizarea unei cutii pentru toate cablurile robotului, insa am gasit o
+                        alternativa
+                        mai eficienta. Toate firele au fost introduse in manșoane si diverse lanțuri de cabluri.
+
+                    </li>
+                    <li> pentru printurile 3D de pe robot am folosit filament de tip HIPS, un plastic cu rezistență
+                        ridicata la
+                        impact;
+                    </li>
+                    <li> sasiul, glisiera si alte elemente din kiturile goBILDA sunt confectionate din aluminiu. Acesta
+                        este
+                        des
+                        utilizat multumita proprietatilor sale cum ar fi rezistenta la coroziune, greutatea redusa,
+                        conductibilitatea termica si electrica buna.
+                    </li>
+                    <li> firul textil acoperit cu teflon este folosit pentru glisierele orizontale și are o grosime de
+                        0,36 mm
+                        și o
+                        capacitate de încărcare de până la 31,5 kg. Însă, este important sa tinem cont de limitarile ei,
+                        uzura
+                        si
+                        umiditatea. Cu toate acestea, firul poate suferi uzură rapidă ca urmare a tensiunii constante,
+                        frecării,
+                        umidității și variațiilor de temperatură.
+                        problema: din cauza rezistentei se rupe dupa o perioada de utilizare
+                        solutie: Pentru a impiedica o rupere accidentala intr-un meci, aceasta este schimbata periodic
+                        pentru a
+                        preintampina deteriorarea.
+                        problema: la mosoarele printate 3D, era suficient de subtire cat sa intre intre layere si sa
+                        sara cu
+                        totul
+                        de pe mosor
+                        solutie: am cumparat mosoare turnate de la gobilda
+                    </li>
+                    <li> firul sintetic de pe glisiera verticala este mai mult de doua ori mai gros, cu 0,75mm si cu o
+                        capacitate
+                        de incarcare de 45kg. Acesta, prin grosimea aditionala, se rupe mult mai greu.
+                    </li>
+
+                </ul>
+
+                <table>
+                    <tr>
+                        <th>Evenimente </th>
+                        <th>LZR Robotics Fest </th>
+                        <th>4 Challenge Transilvania </th>
+                        <th>Inaintea regionalei </th>
+                    </tr>
+                    <tr>
+                        <td>Poza</td>
+                    </tr>
+                    <tr>
+                        <td>Descriere</td>
+                        <td>Sistem de intake singular (folosire un singur cleste amplasat pe glisiera verticala);
+                            Glisierele orizontale aveau rolul de a misca glisiera principala in fata, separat de sasiu
+                        </td>
+                        <td>Sistem de intake dublu (pe glisiera verticala sleeve, iar pe cele orizontale cleste);
+                            Glisierele orizontale misca clestele de pe spate separat de sasiu </td>
+                        <td>Sistem dublu de inake (sleeve+cleste); Glisiera sustinuta de 2 U Channels pe laterale;
+                            Glisiere orizontale misca clestele separate de sasiu</td>
+                    </tr>
+                    <tr>
+                        <td> Preczie Invartiri </td>
+                        <td> 50%- invartire doar in jurul centrului de greutate (glisiera) </td>
+                        <td> 100%- miscare pe toate axele </td>
+                        <td> 100%- miscare pe toate axele </td>
+                    </tr>
+                    <tr>
+                        <td>Rata success conuri</td>
+                        <td>65% incercari reusite de punctare; esecuri din cauza nefunctionarii corespunzatoare a glisierei, sarire roti zimtate de la cleste, cod neterminat</td>
+                        <td>45%- punctare doar pe ground, high junctions si terminal; maparea inaltimii glisierei nu a fost precisa</td>
+                        <td>Prezicere 100%- punctare pe toate junctionurile; posibiliitatea formarii unui circuit</td>
+                    </tr>
+                    <tr>
+                        <td>Rata success autonomie</td>
+                        <td>5%- partea mica din cod existenta nu functiona corect (a fost apelat acelasi motor de 4 ori, rezultand rotiri constante)</td>
+                        <td>50%- jumatate din numarul de meciuri nu a fost incarcata bine in driver station; parcari mai mult decat satisfacatoare</td>
+                        <td>100%- autonomie de 5+1 conuri</td>
+                    </tr>
+                </table>
+                <br />
+            </ol>
+        </li>
+        <li>
+            <strong> Strategie de joc </strong> <br />
+            În perioada de autonomie, robotul scanează codurile April Tag de pe sleeve și le stochează timp de 30 de
+            secunde. Apoi, robotul marchează 5 conuri pe high junction și se parchează în locul corect determinat prin
+            randomizare. Alegerea codului April Tag a fost justificată de ușurința citirii sale în poziția de start și
+            de faptul că lumina și unghiul nu afectează eficiența citirii, ceea ce reduce la zero probabilitatea unei
+            erori în perioada de autonomie. <br />
+            În perioada de TeleOp, robotul încearcă să marcheze cât mai multe conuri pe high junction printr-o mișcare
+            continuă la high junctionul din substația cu conuri predate de către jucătorul uman. În perioada de Endgame,
+            beaconul este plasat pe același high junction unde robotul a stivuit conurile și apoi se mută pe un alt
+            junction. În ultimele secunde ale perioadei de joc, antrenorul informează conducătorul robotului dacă mai
+            are timp pentru a marca un con sau trebuie să se grăbească pentru a se parca și a obține puncte
+            suplimentare, în funcție de timpul rămas.
+        </li>
+        <li>
+            <strong>
+                Programare </strong> <br />
+            Programarea robotului este facuta in Android Stiudio, folosind limbajul de progeamare Java, folosind Road
+            Runner, un set de biblioteci si instrumente de programare. Road Runner folosește tehnici avansate de
+            planificare a mișcării și urmărire a traiectoriei pentru a ajuta robotul să se deplaseze rapid și precis
+            într-un mediu de joc. <br />
+            Am ales aceasta unealta sa concepem programarea, fiindca confera urmatoarele avantaje:
+            <ul style="list-style-type: square;">
+                <li> autonomie rapida; </li>
+                <li> functii predefinite pentru miscarea din perioada autonoma; </li>
+                <li> pozitii predefinite pentru componentele robotului; </li>
+                <li> control mai bun asupra sasiului; </li>
+                <li> calibrare motoare PID (care permite ajustarea distributiei inegale de greutate); </li>
+                <li> OpMode-uri predefinite pentru ajustarea PIDului </li>
+                <li> permite folosirea unui emulator pentru simularea traiectoriei robotului in autonomie. </li>
+            </ul>
+            Programarea robotului a permis automatizarea mai multor mișcări, astfel încât acestea să fie efectuate mai
+            rapid: automatizarea plasării conurilor de pe loc (incluzând multitudinea de mișcări necesare de la
+            prinderea conului în clește până la eliberarea acestuia pe junction); prinderea automată a conurilor atunci
+            când senzorul de culoare de pe clește se apropie suficient de mult pentru a le prinde; utilizăm un software
+            care memorează mișcările efectuate de către conducătorul robotului și le poate reda atunci când acesta apasă
+            un buton. În plus, pentru o accelerație și o mișcare mai lină a bazei, am setat puterea motoarelor să
+            crească exponențial, în loc să crească liniar.
+
+        </li>
+</body>
+
+</html>
