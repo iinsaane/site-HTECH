@@ -3,7 +3,7 @@ console.log(document.body);
 const loader = new THREE.GLTFLoader();
 
 loader.load(
-  "/models/jimmy.glb",
+  "/static/models/jimmy.glb",
   function (gltf) {
     //scale the model to 10x its original size
     const multiplier = 30;
